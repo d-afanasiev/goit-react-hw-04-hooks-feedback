@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import css from "./FeedbackOptions.module.css";
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export default function FeedbackOptions({ options, onLeaveFeedback }) {
   const keyObject = Object.keys(options);
   return (
     <div className={css.wrapperButtons}>
@@ -16,7 +16,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       ))}
     </div>
   );
-};
+}
 
 FeedbackOptions.propTypes = {
   options: PropTypes.shape({
@@ -25,5 +25,3 @@ FeedbackOptions.propTypes = {
     bad: PropTypes.number.isRequired,
   }),
 };
-
-export default FeedbackOptions;
