@@ -1,0 +1,15 @@
+.wrapperButtons {
+  width: 100%;
+}
+
+.wrapperButtons button {
+  margin-right: 15px;
+}
+
+.wrapperButtons button::first-letter {
+  text-transform: uppercase;
+}
+
+.wrapperButtons button:last-child {
+  margin-right: 0;
+}
